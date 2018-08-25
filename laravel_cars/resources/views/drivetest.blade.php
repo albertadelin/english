@@ -16,6 +16,10 @@
 
                 <th>Car Number</th>
 
+                <th>Update</th>
+
+                <th>Delete</th>
+
             </tr>
 
         </thead>
@@ -41,14 +45,21 @@
                     "columns": [
 
                         { "data": "id" },
-
                         { "data": "name" },
-
-                        { "data": "cars.number" }
-
+                        { "data": "cars.number" },
+                        { "data" : "id",
+                            "render": function ( data, type, row, meta ) {
+                                return '<a class="btn btn-info update-btn" data-id="'+ data +'">Update</a>';
+                            },
+                        },
+                        { "data" : "id",
+                            "render": function ( data, type, row, meta ) {
+                                return '<a class="btn btn-danger delete-btn" data-id="'+ data +'">Delete</a>';
+                        },
+                    }
                     ],
 
-                    "lengthMenu": [[10, 25, 2, -1], [10, 25, 'Multe', "Toate"]]
+                    "lengthMenu": [[10, 25, -1], [10, 25, "All"]]
 
             });
 
