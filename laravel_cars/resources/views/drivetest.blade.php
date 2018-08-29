@@ -3,7 +3,9 @@
 @section('content')
 
 
-
+    
+    <a href="http://laravel.cars:81/client/create/" class="btn btn-success">Create</a>
+    <hr>
     <table id="table_id" class="display">
 
         <thead>
@@ -12,7 +14,11 @@
 
                 <th>Id</th>
 
-                <th>Name</th>
+                <th>Name
+                
+                </th>
+
+                <th>Car Name</th>
 
                 <th>Car Number</th>
 
@@ -46,6 +52,7 @@
 
                         { "data": "id" },
                         { "data": "name" },
+                        { "data": "cars.name" },
                         { "data": "cars.number" },
                         { "data" : "id",
                             "render": function ( data, type, row, meta ) {

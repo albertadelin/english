@@ -38,60 +38,66 @@
         <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
         <script>
-            $(document).ready( function () {
-                
-                $.ajax({
+
+                $(document).ready( function () {
+                    
+                    $.ajax({
                         type: "GET",
                         url: "http://lumen.cars:81/cars",
-                        data: { 'name' : name  },
+                        
                         
                         success: function(data){
                             var opts = $.parseJSON(data);
-                            
-                            $.each(opts, function(i, d) {
-                                
-                                $('#car_id').append('<option value="' + d.car_id + '">' + d.name + '</option>');
+                            //console.log(opts);
+                            $.each(opts.data, function(i, d) {
+                                //console.log(d.id);
+                                $('#car_id').append('<option value="' + d.id + '">' + d.name + ' - ' + d.number + '</option>');
                             });
+
+                            
                         }
-                });
+                    });
+
+
+                    $('#form').on('submit', function(e){
+                        
+                        e.preventDefault();
+
+                        var url_string = window.location.href;
+
+                        var url = new URL(url_string);
+
+                        var id = url.searchParams.get("id");
+
+                        var formData = $("#form").serialize();
+
+                        
+
+                        $.ajax({
+                            
+                            type: "PUT",
+
+                            url: "http://lumen.cars:81/client/" + id,
+
+                            data: formData,
+                            
+                            success: function(data){ 
+                                
+                                window.location = "http://laravel.cars:81/drivetest";
+
+                            }
+
+                        });
+
+
+
+                    });
+
                 
-            }
+
+                    });
+
             
-
-
-
-            $('#form').ready( function(e){
-
-                e.preventDefault();
-
-                var url_string = window.location.href;
-
-                var url = new URL(url_string);
-
-                var id = url.searchParams.get("id");
-
-                var formData = $("#form").serialize();
-
-
-                $.ajax({
-
-                    type: "PUT",
-
-                    url: "http://lumen.cars:81/client/" + id,
-
-                    data: formData,
-
-                    success: function(data){ 
-
-                        window.location = "http://laravel.cars:81/drivetest"
-
-                    }
-
-                });
-                
-
-            });
-
             
 
         </script>

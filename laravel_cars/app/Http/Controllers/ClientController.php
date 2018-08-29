@@ -11,4 +11,10 @@ class ClientController extends Controller
         return view('clients.update');
 
     }
+
+    public function create(){
+
+        return view('clients.create');
+
+    }
 }
