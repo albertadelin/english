@@ -15,3 +15,5 @@ Route::get('/about','AboutController@show');
 Route::get('/drivetest','DriveTestController@show');
 
 
+Route::get('/client/update','ClientController@update');
+
