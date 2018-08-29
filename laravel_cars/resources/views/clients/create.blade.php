@@ -13,7 +13,7 @@
 
         <label>Name</label>
 
-        <select type="text" class="form-control" id = "name" placeholder="Enter Team Name" name="name">
+        <select type="text" class="form-control" id = "name" placeholder="Name" name="name">
 
     </div>
 
@@ -21,7 +21,7 @@
 
         <label>Masina</label>
 
-        <input type="text" class="form-control" id = "car_id" placeholder="Enter Team Location" name="car_id">
+        <input type="text" class="form-control" id = "car_id" placeholder="Location" name="car_id">
 
     </div>
 

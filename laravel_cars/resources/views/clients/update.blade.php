@@ -25,7 +25,7 @@
 
             </div>
 
-            <input type = "submit" value = "Submit" class = "btn btn-primary" id = "submitBtn">
+            <input type = "submit" value = "submit" class = "btn btn-primary" id = "submitBtn">
 
         </form>
 
@@ -38,8 +38,29 @@
         <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
         <script>
+            $(document).ready( function () {
+                
+                $.ajax({
+                        type: "GET",
+                        url: "http://lumen.cars:81/cars",
+                        data: { 'name' : name  },
+                        
+                        success: function(data){
+                            var opts = $.parseJSON(data);
+                            
+                            $.each(opts, function(i, d) {
+                                
+                                $('#car_id').append('<option value="' + d.car_id + '">' + d.name + '</option>');
+                            });
+                        }
+                });
+                
+            }
+            
 
-            $('#form').on('submit', function(e){
+
+
+            $('#form').ready( function(e){
 
                 e.preventDefault();
 
@@ -50,7 +71,6 @@
                 var id = url.searchParams.get("id");
 
                 var formData = $("#form").serialize();
-
 
 
                 $.ajax({
@@ -65,9 +85,10 @@
 
                         window.location = "http://laravel.cars:81/drivetest"
 
-                    },
+                    }
 
                 });
+                
 
             });
 
