@@ -16,39 +16,63 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 
 
-    <div class="w3-row-padding w3-padding-64 w3-container">
         
-        <div class="w3-content">
-            <div class="w3-twothird">
-                <h1>Dacia</h1>
-                <h5 class="w3-padding-32">Spațioasă </h5>
-                <p class="w3-text-grey">Noi, cei de la Dacia, suntem de părere că spațiul nu trebuie neapărat să coste mult. De aceea, autovehiculele noastre sunt concepute diferit. Relația cu mașina ta continuă după achiziționare, iar programele noastre de servicii post-vânzare și întreținere reflectă acest aspect. Clar, simplu, cuprinzător – acestea sunt principiile noastre. </p>
-           
-                
-                <h5 class="w3-padding-32">Fiabilă </h5>
-                <p class="w3-text-grey">Faptul că avem o perspectivă diferită asupra lucrurilor, nu înseamnă că nu le luăm în serios. Grație experienței industriale și tehnice a Grupului Renault, creăm autovehicule robuste și fiabile. Garanția noastră standard este de 3 ani sau 100.000 km (oricare dintre cele două limite este atinsă prima).</p>
+    <div class="form-group">
+
+        <h1 align="center">Tutoriale utile</h1>
+
+        <a href="https://www.cursurio.com/2018/01/engleza-numerele.html">
+            <h3>Numerele în limba Engleză</h3>
+        </a>
+        <p>Numerele de la 1 la 10 în engleză ajută la formarea numerelor compuse, 
+            de aceea, este important să le acordaţi o atenţie sporită atunci 
+            când le veţi studia şi învăţa. Numerele de la 1 la 10 în engleză nu se formează conform 
+            nici unui tipar simplu de memorare. În link-ul următor veţi găsi 
+            numerele de la 1 la 10 în engleză cu sfaturi de pronunţie.</p>
 
 
-                <h5 class="w3-padding-32">Simplă </h5>
-                <p class="w3-text-grey">Noi, cei de la Dacia, apreciem simplitatea. De aceea, autovehiculele noastre sunt atât de ușor de utilizat în viața de zi cu zi. Pe același principiu, ne străduim să oferim clienților noștri autovehicule la cele mai bune prețuri.</p>
+        <br>
+
+        <a href="https://www.cursurio.com/2018/01/engleza-lunile-anului.html">
+            <h3>Lunile Anului în Engleză</h3>
+        </a>
+
+        <p>Lunile in engleza nu sunt foarte greu de invatat pentru ca se scriu asemanator 
+            cu cele in limba romana, doar pronuntia fiind un pic diferita. Este important 
+            de retinut ca lunile anului in limba engleza cat si prescurtarile acestora se 
+            scriu cu majuscula.</p>
 
 
-                <h5 class="w3-padding-32">Inteligentă </h5>
-                <p class="w3-text-grey">Noi, cei de la Dacia, credem într-un alt fel de a conduce. Deoarece credem că lucrurile esențiale sunt mai importante decât excesul. Astfel, pentru a oferi clienților noștri ceea ce este cu adevărat esențial, dezvoltăm soluții ingenioase și utile în fiecare zi. </p>
+        <br>
+
+        <a href="https://www.cursurio.com/2018/01/engleza-culorile.html">
+            <h3>Culorile în Engleză</h3>
+        </a>
+
+        <p>In aceasta lectie veti invata denumirea celor mai importante culori in engleza 
+            impreuna cu pronuntia acestora si sfaturi utile sau exemple de cum se folosesc 
+            culorile intr-o propozitie in mod corect. Exista doua variante acceptate de a 
+            scrie "culoare" in limba engleza, in Marea Britanie se foloseste "colour" iar 
+            in America "color", pentru pluralul "culori" se adauga la finalul fiecarei 
+            variante un "s" la final devenind astfel "colours / colors". In tabelul de mai 
+            jos va voi preciza si care sunt culorile primare (Primary Colours) si cele 
+            secundare (Secondary Colours).</p>
+        
+        
+            <br>
+
+        <a href="https://www.cursurio.com/2018/01/engleza-animale.html">
+            <h3>Animale în Engleză</h3>
+        </a>
+
+        <p>In aceasta lectie veti invata denumirea 
+            si pronuntia celor mai comune animale (domestice, salbatice, acvatice) si 
+            insecte in limba engleza.</p>
 
 
+       </div>
 
-            </div>
-
-            <div class="w3-third w3-center">
-                
-                <img src="/img/logo.png" alt="">
-            </div>
-        </div>
-        <img src="/img/banner.jpg" alt="">
-
-</div>
-
+            
 
 
 @endsection
